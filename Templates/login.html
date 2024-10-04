@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://www.shutterstock.com/image-vector/online-banking-login-protection-concept-260nw-2125197293.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post">
+
+    
+    <div class="atm">
+        <h1>Login Account</h1>
+        <input required type="text" name="acn" placeholder="Account number">
+        <p><input required type="text" name="pin" placeholder="Pin number"></p>
+        <button>Submit</button>
+    </div>
+</form>
+<br>
+<a href="{{url_for('userpanel',account_no=an,pin_no=pn)}}"><button>Back</button></a>
+
+</body>
+
+</html>

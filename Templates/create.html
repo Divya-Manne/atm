@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://nmgprod.s3.amazonaws.com/media/files/ef/ea/efeafaa38c9d5704835c580a775b2629/cover_image_1683291314.jpeg.760x400_q85_crop_upscale.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            color:goldenrod;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <form method="post">
+    <div class="atm">
+        <h1>Create Account</h1>
+        <input type="text" name="accno" placeholder="Enter account number">
+        <p><input type="text" name="pinno" placeholder="Enter pin number"></p>
+        <button>Submit</button>
+    </div>
+</form>
+<br>
+<a href="{{url_for('userpanel',account_no=an,pin_no=pn)}}"><button>Back</button></a>
+</body>
+
+</html>

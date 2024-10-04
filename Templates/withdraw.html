@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-vector/business-woman-withdraw-money-from-atm-machine_1308-106068.jpg);
+            background-repeat: no-repeat;
+            margin-left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+    <div class="atm">
+        <h1>Withdraw Amount</h1>
+        <input type="text" name='amount' placeholder="Enter the amount">
+        <p><button>Submit</button></p>
+    </div>
+    </form>
+    <a href="{{url_for('userpanel',account_no=an,pin_no=pn)}}"><button>Back</button></a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://img.freepik.com/premium-photo/withdrawal-concept-banner-with-atm-financial-apps-cache-machine-smartphone-credit-card-euro-cash-money-bank-with-connection-lines-ultraviolet-background_76964-218349.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    </div>
+    <div class="atm">
+        <h1>Select the option:</h1>
+        <a href="{{url_for('balance',an=account_no,pn=pin_no)}}">
+            <p><button>balance</button></p>
+        </a>
+        <a href="{{url_for('withdraw',an=account_no,pn=pin_no)}}">
+            <p><button>Withdraw</button></p>
+        </a>
+        <a href="{{url_for('credit',an=account_no,pn=pin_no)}}">
+            <p><button>Credit</button></p>
+        </a>
+        <a href="{{url_for('delete',accno=account_no)}}">
+            <p><button>delete your account</button></p>
+        </a>
+    </div>
+    <a href="{{url_for('home')}}"><button>Back</button></a>
+</body>
+
+</html>
